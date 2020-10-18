@@ -1,8 +1,7 @@
 import app from 'apprun';
 import * as signalR from "@microsoft/signalr";
 
-// const apiBaseUrl = 'https://apprun-signalr-demo.azurewebsites.net';
-const apiBaseUrl = '';
+declare var apiBaseUrl;
 
 const connection = new signalR.HubConnectionBuilder()
   .withUrl(`${apiBaseUrl}/api`)
